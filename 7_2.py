@@ -1,5 +1,7 @@
 # 7.2
 
+# [ ] 20230223214336 Сделать консольный ввод
+
 def get_order_amount(price_of_portion_of_ice_cream: int,
                      price_of_bottle_of_soda: int,
                      number_of_portion_of_ice_cream: int,
