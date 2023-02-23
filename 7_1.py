@@ -7,11 +7,17 @@
 # [x] 20230223193858 Переделать в input
 # [x] 20230223200909 Обернуть в ф.
 
-print("x = (a + 4 * c) / (2 * c + a)")
-
 a = int(input("a = "))
 c = int(input("c = "))
 
-x = (a + 4 * c) / (2 * c + a)
 
+def calculate(a, c):
+    print("x = (a + 4 * c) / (2 * c + a)")
+
+    x = (a + 4 * c) / (2 * c + a)
+
+    return x
+
+
+x = calculate(a, c)
 print("x =", x)
