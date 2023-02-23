@@ -20,4 +20,5 @@ def calculate(a, c):
 
 
 x = calculate(a, c)
+
 print("x =", x)
