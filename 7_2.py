@@ -9,32 +9,33 @@ def get_order_amount(price_of_portion_of_ice_cream: int,
         price_of_bottle_of_soda * number_of_bottle_of_soda
 
 
-def print_result_of_compare_orders(sum_order_stefania, sum_order_michailo):
-    if sum_order_stefania < sum_order_michailo:
+def print_result_of_compare_orders(order_amount_stefania, order_amount_michailo):
+    if order_amount_stefania < order_amount_michailo:
         print("Стефания потратила - "
-              + str(sum_order_stefania)
+              + str(order_amount_stefania)
               + ", что меньше, чем Михайло - "
-              + str(sum_order_michailo))
-    elif sum_order_stefania > sum_order_michailo:
+              + str(order_amount_michailo))
+    elif order_amount_stefania > order_amount_michailo:
         print("Стефания потратила - "
-              + str(sum_order_stefania)
+              + str(order_amount_stefania)
               + ", что больше, чем Михайло - "
-              + str(sum_order_michailo))
+              + str(order_amount_michailo))
     else:
         print("Стефания потратила - "
-              + str(sum_order_stefania)
+              + str(order_amount_stefania)
               + ", что столько же, сколько Михайло - "
-              + str(sum_order_michailo))
+              + str(order_amount_michailo))
+
 
 # Тестирование
-sum_order_stefania = get_order_amount(1, 4, 3, 2)
-sum_order_michailo = get_order_amount(1, 4, 2, 3)
-print_result_of_compare_orders(sum_order_stefania, sum_order_michailo)
+order_amount_stefania = get_order_amount(1, 4, 3, 2)
+order_amount_michailo = get_order_amount(1, 4, 2, 3)
+print_result_of_compare_orders(order_amount_stefania, order_amount_michailo)
 
-sum_order_stefania = get_order_amount(1, 4, 3, 2)
-sum_order_michailo = get_order_amount(1, 4, 3, 2)
-print_result_of_compare_orders(sum_order_stefania, sum_order_michailo)
+order_amount_stefania = get_order_amount(1, 4, 3, 2)
+order_amount_michailo = get_order_amount(1, 4, 3, 2)
+print_result_of_compare_orders(order_amount_stefania, order_amount_michailo)
 
-sum_order_stefania = get_order_amount(1, 4, 2, 3)
-sum_order_michailo = get_order_amount(1, 4, 3, 2)
-print_result_of_compare_orders(sum_order_stefania, sum_order_michailo)
+order_amount_stefania = get_order_amount(1, 4, 2, 3)
+order_amount_michailo = get_order_amount(1, 4, 3, 2)
+print_result_of_compare_orders(order_amount_stefania, order_amount_michailo)
