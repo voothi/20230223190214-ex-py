@@ -8,6 +8,9 @@
 # [x] 20230223193858 Переделать в input
 # [x] 20230223200909 Обернуть в ф.
 
+# Ref
+# Приоритеты операторов Python https://letpy.com/handbook/operator-priorities/
+
 a = int(input("a = "))
 c = int(input("c = "))
 
